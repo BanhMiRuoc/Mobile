@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="username">Username</string>
+    <string name="admin">admin</string>
+    <string name="password">Password</string>
+    <string name="hint_pw">******</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">LOGIN</string>
+</resources>

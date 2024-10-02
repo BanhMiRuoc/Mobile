@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:padding="16dp"
+        android:text="@string/login_screen"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <!-- Username Label -->
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/username"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_margin="16dp"
+        android:layout_toEndOf="@id/username_label"
+        android:hint="@string/admin"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/password"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toEndOf="@id/password_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/hint_pw"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <!-- Remember Me CheckBox -->
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignEnd="@id/password"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:buttonTint="#01DBC5"
+        android:text="@string/remember_me"
+        android:textSize="18sp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remember_me"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#e4e4e4"
+        android:text="@string/login"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

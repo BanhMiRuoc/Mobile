@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:padding="16dp">
+
+
+
+    <!-- Username Row -->
+    <TableRow>
+        <TextView
+            android:id="@+id/username_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/admin"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+    </TableRow>
+
+    <!-- Password Row -->
+    <TableRow>
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_pw"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+    </TableRow>
+
+    <!-- Remember Me Row -->
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#01DBC5"
+            android:text="@string/remember_me"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <!-- Login Button Row -->
+    <TableRow>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e4e4e4"
+            android:padding="8dp"
+            android:text="@string/login"
+            android:textColor="@android:color/black" />
+    </TableRow>
+
+</TableLayout>
