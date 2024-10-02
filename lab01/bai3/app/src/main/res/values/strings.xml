@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Thông tin người dùng</string>
+    <string name="header">Thông tin người dùng</string>
+    <string name="name">Họ và tên</string>
+    <string name="gender">Giới tính</string>
+    <string name="female">Nữ</string>
+    <string name="male">Nam</string>
+    <string name="both">Cả hai</string>
+    <string name="email">Email</string>
+    <string name="address">Địa chỉ</string>
+    <string name="favourite">Yêu thích</string>
+    <string name="love">Sở thích</string>
+    <string name="football">Bóng đá</string>
+    <string name="swimming">Bơi lội</string>
+    <string name="jogging">Chạy bộ</string>
+    <string name="rating">Khả năng bơi</string>
+    <string name="save">Lưu thông tin</string>
+    <string name="toeic">Điểm TOEIC</string>
+    <string name="noti">Nhận thông báo qua email</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="close">Đóng ứng dụng</string>
+</resources>
