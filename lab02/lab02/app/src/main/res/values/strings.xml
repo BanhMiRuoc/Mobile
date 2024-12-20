@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">lab02</string>
+    <string name="password">Password</string>
+    <string name="header">Sign in to continue</string>
+    <string name="sub">Lock</string>
+    <string name="username">Username</string>
+    <string name="remember">Keep me Signed in</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="btn_submid">SIGN IN</string>
+</resources>
