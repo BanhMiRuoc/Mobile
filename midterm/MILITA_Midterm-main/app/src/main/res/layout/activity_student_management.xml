@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".StudentManagementActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFEBEB"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Management"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/brown"
+                    android:textSize="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/avatar"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/search_input"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter student information to search"
+                    android:textColorHint="@color/brown"
+                    android:fontFamily="@font/itim"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:drawableRight="@drawable/baseline_search_24"
+                    android:background="@drawable/search_background" />
+                <Button
+                    android:id="@+id/btnFilter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bg_button"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_button1"
+                    android:text="Add student"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_button"
+                    android:layout_marginLeft="20dp"
+                    android:text="Delete student"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/brown"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp">
+                <CheckBox
+                    android:id="@+id/chkCheckAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="#FFDBDB"/>
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="25dp"
+                    android:layout_height="1dp"
+                    android:background="#FAB3B3"
+                    android:layout_toRightOf="@id/chkCheckAll"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List of students"
+                    android:textColor="@color/brown"
+                    android:textSize="28dp"
+                    android:fontFamily="@font/itim"
+                    android:layout_toRightOf="@id/view"/>
+
+                <Button
+                    android:id="@+id/btnMore"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/baseline_more_horiz_24"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:layout_marginHorizontal="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnListStudent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/graduate" />
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/home"/>
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/student" />
+    </LinearLayout>
+</LinearLayout>

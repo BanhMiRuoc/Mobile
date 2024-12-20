@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:background="#FFEBEB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User management"
+                    android:fontFamily="@font/itim"
+                    android:textSize="33sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/red_text"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_3"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add user"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/radius_btn_2"/>
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="105dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete user"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/red_text"
+                    android:textSize="20sp"
+                    android:background="@drawable/radius_btn_1"/>
+                <Button
+                    android:id="@+id/btnHistory"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/red_text"
+                    android:textSize="20sp"
+                    android:background="@drawable/radius_btn_1"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+                <CheckBox
+                    android:id="@+id/chkCheckAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="#FFDBDB"/>
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="25dp"
+                    android:layout_height="1dp"
+                    android:background="#FAB3B3"
+                    android:layout_toRightOf="@id/chkCheckAll"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List of users"
+                    android:textColor="@color/brown"
+                    android:textSize="28dp"
+                    android:fontFamily="@font/itim"
+                    android:layout_toRightOf="@id/view"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/pale_pink"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnListStudent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/graduate" />
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/home"/>
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/student" />
+    </LinearLayout>
+</LinearLayout>

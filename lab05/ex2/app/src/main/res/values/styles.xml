@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomPickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#FF4081</item> <!-- Màu hồng cho các nút -->
+        <item name="android:textColorPrimary">#FF000000</item> <!-- Màu chữ trắng -->
+        <item name="android:background">#FFFFFF</item> <!-- Màu nền dialog -->
+        <item name="android:titleTextStyle">@style/CustomDialogTitleText</item> <!-- Thay đổi text style cho tiêu đề -->
+    </style>
+
+    <style name="CustomDialogTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item> <!-- Màu chữ trắng cho tiêu đề -->
+    </style>
+</resources>

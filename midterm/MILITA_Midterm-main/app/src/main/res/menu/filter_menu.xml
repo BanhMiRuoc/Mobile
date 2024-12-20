@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_name_asc"
+        android:title="Theo tên (A-Z)" />
+    <item
+        android:id="@+id/filter_name_desc"
+        android:title="Theo tên (Z-A)" />
+    <item
+        android:id="@+id/filter_id_asc"
+        android:title="Theo ID tăng dần" />
+    <item
+        android:id="@+id/filter_id_desc"
+        android:title="Theo ID giảm dần" />
+</menu>

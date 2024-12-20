@@ -1,0 +1,254 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Profile Header with Back Icon and Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:padding="10dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <!-- Profile Title -->
+        <TextView
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Profile Avatar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat"
+            android:layout_gravity="center" />
+
+        <!-- Camera Icon Over Avatar -->
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/camera"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Edit Avatar"
+            android:layout_marginTop="-40dp" />
+
+        <!-- Username Below Avatar -->
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edward_larry"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Editable Fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:dividerPadding="8dp"
+        android:showDividers="middle"
+        android:divider="@android:drawable/divider_horizontal_textfield">
+
+        <!-- Job Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/job"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/jobTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senior Developer"
+                android:text="Senior Developer"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edward Larry"
+                android:textColor="@color/black"
+                android:text="Edward Larry"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Phone Number -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/phone"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:textColor="@color/black"
+                android:text="(+84) 0909999999"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/email"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:text="edward_larry@gmail.com"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Address -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/map"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textColor="@color/black"
+                android:text="3646 Geneva Street, United States"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Website -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/link"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/websiteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Website"
+                android:textColor="@color/black"
+                android:text="https://edwardlarry.info"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:background="@color/green"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/download"
+        android:padding="16dp"
+        android:gravity="center" />
+</LinearLayout>

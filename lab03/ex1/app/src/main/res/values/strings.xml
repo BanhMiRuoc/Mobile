@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">lab03</string>
+    <string name="welcome_text">Xin chào, vui lòng đăng nhập</string>
+    <string name="email">Nhập email</string>
+    <string name="login_btn">ĐĂNG NHẬP</string>
+</resources>

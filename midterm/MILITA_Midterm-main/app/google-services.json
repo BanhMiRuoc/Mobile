@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887610383466",
+    "project_id": "milita0028",
+    "storage_bucket": "milita0028.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887610383466:android:b250aae22a7a0b2635fe13",
+        "android_client_info": {
+          "package_name": "com.example.milita"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNq2aFzUI0ud4R0bG5IJieCvRtrCIHwSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
